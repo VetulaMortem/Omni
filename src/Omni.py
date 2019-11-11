@@ -10,11 +10,11 @@ print("Omni Script for python script execution")
 if len(sys.argv) < 2:
     print("Omni -h for help")
 elif "-h" == sys.argv[1]:
-    print("add scripts with the setup option or call already added scripts with each name.\n"
-          "Edit this or other Scripts manually with the edit option")
-    print("List scripts with the list option")
-    print("Remove scripts with the remove option")
-    print("Add Shortcut-scripts with the shortcut option")
+    print("setup: add scripts with the setup option or call already added scripts with each name.\n"
+          "edit: Edit this or other Scripts manually with the edit option")
+    print("list: List scripts with the list option")
+    print("remove: Remove scripts with the remove option")
+    print("shortcut: Add Shortcut-scripts with the shortcut option")
 elif "setup" == sys.argv[1] and len(sys.argv) <= 2:
     os.system("python3.7 "+path+"setup.py")
 elif "setup" == sys.argv[1] and len(sys.argv) == 3:
